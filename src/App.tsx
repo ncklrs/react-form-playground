@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import FormEmbed from "./FormEmbed";
 import { GoogleTagManager } from "react-google-gtm";
+import FormTwo from "./FormTwo";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <div className="mx-auto max-w-3xl">
             <p>Welcome to the form show</p>
             <FormEmbed />
+            <FormTwo />
           </div>
         </div>
       </div>

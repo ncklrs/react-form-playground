@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Input, Select } from "./components";
+
 import { useForm, SubmitHandler } from "react-hook-form";
 import { sendGTMEvent } from "react-google-gtm";
 
@@ -55,8 +56,7 @@ const formElements = [
 export default function FormEmbed() {
   // const { register, handleSubmit } = useForm<FormValues>();
   // const onSubmit: SubmitHandler<FormValues> = (data) => console.log(data);
-  const onSubmit = (data: any) =>
-    sendGTMEvent({ event: "form_submission", data });
+  const onSubmit = (data: any) => console.log(data);
 
   return (
     <Form onSubmit={onSubmit} defaultValues={{}}>
